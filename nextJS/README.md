@@ -20,3 +20,4 @@
 
 + 아래 샘플코드를 참고하여 만듦
   + https://github.com/zeit/next.js/tree/canary/examples/with-typescript
+  + 사용법은 https://github.com/segmentio/create-next-app#overview 참고
