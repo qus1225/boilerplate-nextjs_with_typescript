@@ -18,5 +18,5 @@
 ## 아래 샘플 참고해서 만듦.
   + https://facebook.github.io/create-react-app/docs/adding-typescript
     + 수정한 것
-      + sass셋팅, react-router, 절대경로 사용 셋팅
+      + sass셋팅, react-router, tslint파일 추가, 절대경로 사용 셋팅
   + https://github.com/Microsoft/TypeScript-React-Starter

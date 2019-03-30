@@ -1,6 +1,8 @@
 # 'React.js + TypeScript' 어플리케이션 BoilerPlate
 
 ## 설명
++ react 폴더
+  + react 앱 보일러플레이트
 + nextJS 폴더
   + Next.js 앱 보일러플레이트
 + nextJSFirebase 폴더
