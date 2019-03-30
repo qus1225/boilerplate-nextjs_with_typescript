@@ -1,28 +1,29 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.scss';
+import React, { Component } from "react";
+import "./App.scss";
+import SampleComponent from "./pages/sample";
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.tsx</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
+import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
+
+
+function Index() {
+  return <h2>보일러 플레이트</h2>;
 }
 
-export default App;
+function AppRouter() {
+  return (
+    <div className="container">
+      <Router>
+        <div className="navBar">
+          <Link to="/" >메인</Link>
+          <Link to="/sample" >샘플페이지</Link>
+        </div>
+        <Switch>
+          <Route path="/" exact component={Index} />
+          <Route path="/sample" exact component={SampleComponent} />
+
+        </Switch>
+      </Router>
+    </div>
+  );
+}
+export default AppRouter;
